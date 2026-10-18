@@ -8,7 +8,7 @@ with an AXI DMA on a PYNQ-Z2, and verified on hardware from Python.
 
 ## Block diagram
 
-![AXI4-Stream Shift IP Block Design][LE8_bd_ct.png]
+![AXI4-Stream Shift IP Block Design](LE8_bd_ct.png)
 
 Data path: **PS (DDR) → AXI DMA (MM2S) → this IP (S_AXIS → M_AXIS) → AXI DMA (S2MM) → PS (DDR)**
 
