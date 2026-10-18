@@ -37,18 +37,6 @@ notebook/    LE8.ipynb: PYNQ test with saved outputs
 docs/        Block design screenshot
 ```
 
-## Reproduce
-
-1. Copy `bitstream/design_1_AXISShift.bit` and `.hwh` to the PYNQ-Z2 (same folder as the notebook).
-2. Open `notebook/LE8.ipynb` and run all cells. The test fills a 1024-word buffer, runs it
-   through the DMA loopback, and asserts `out == in >> 1`.
-
-To rebuild from source: package `rtl/` as an IP in Vivado (Tools → Create and Package New IP →
-Package a specified directory), infer `S_AXIS` / `M_AXIS` as `axis_rtl`, set
-`ASSOCIATED_BUSIF = S_AXIS:M_AXIS` on the clock, add it to a block design with the Zynq PS
-(S_AXI_HP0 enabled) and an AXI DMA (scatter-gather off), run Connection Automation, and
-generate the bitstream.
-
 ## Tools
 
 Vivado 2025.2 | PYNQ-Z2 (Zynq-7000) | Verilog HDL / Python / PYNQ / NumPy
