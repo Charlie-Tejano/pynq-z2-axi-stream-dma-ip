@@ -1,0 +1,39 @@
+# Vivado project folders ---
+*.runs/
+*.cache/
+*.gen/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.tmp/
+*.srcs/
+.Xil/
+edit_ip_project*/
+
+# --- Vivado project and session files ---
+*.xpr
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+vivado*.jou
+vivado*.log
+vivado_pid*.str
+webtalk*.jou
+webtalk*.log
+
+# --- Packaged IP output (regenerated from rtl/) ---
+component.xml
+xgui/
+
+# --- Python / Jupyter ---
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# --- OS and editor junk ---
+.DS_Store
+Thumbs.db
+*.swp
+*~
