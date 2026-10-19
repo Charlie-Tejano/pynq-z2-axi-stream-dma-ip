@@ -43,4 +43,4 @@ Vivado 2025.2 | PYNQ-Z2 (Zynq-7000) | Verilog HDL / Python / PYNQ / NumPy
 
 ## Notes
 
-Built from Embedded Systems Design (ENGR431) @ University of Saint Thomas for the Fall '26. One thing I learned is that when "DMA" is implemented, the CPU programs the source / destination address, and a length, thereof the "DMA" engine begins then transfers that data over the bus and acts as the "master" of the hardware wires that is connected altogether.
+Built from Embedded Systems Design (ENGR431) @ University of Saint Thomas (Fall 2026). Key takeaway with DMA as it's implemented, the CPU only programs a source / destination address, and a length, thereof the "DMA" engine then becomes the "bus master" and moves the data itself, while the CPU is free to do other work.
